@@ -1,3 +1,4 @@
-app:
-    resource: "@AppBundle/Controller/"
+lomar_web:
+    resource: "@LOMARWebBundle/Controller/"
     type:     annotation
+    prefix:   /

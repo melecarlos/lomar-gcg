@@ -1,0 +1,243 @@
+{% extends "base.html.twig" %}
+
+{% block title %}LoMar GCG | We'll be back soon{% endblock %}
+
+{% block body %}
+    <body class="body-left">
+    <div class="loading">
+      <div class="table">
+        <div class="inner"> <img src="{{ asset('public/images/logo.png') }}" alt="Image" class="logo"> </div> 
+        <!-- end inner --> 
+      </div>
+      <!-- end table --> 
+    </div>
+    <!-- end loading -->
+    <div class="transition-overlay"></div>
+    <section class="slider">
+      <div class="error-pages">
+        <div class="table">
+          <div class="inner"> <a href="index.html"><img src="{{ asset('public/images/logo.png') }}" alt="Image" class="site-logo"></a>
+            <h3 style="font-size:90px;">We'll be back soon</h3>
+            <h6>We are coming wiht our new website</h6>
+            <style>
+            #countdown{ width:100%; float:left; margin-top:60px;}
+            .error-pages .circle{ width:90px; height:90px; display:inline-block; text-align:center; margin:0 10px; border-radius:90px; background:#f3c217; color:#fff;}
+                    .error-pages .circle b{ width:100%; float:left; margin-top:10px; font-size:30px;}
+                    .error-pages .circle span{ width:100%;}
+            </style>
+
+            <div id="countdown">
+            <div class="circle">
+            <b class="days">00</b>
+            <span>days</span>
+            </div>
+            <!-- end circle -->
+            <div class="circle">
+            <b class="hours">00</b>
+            <span>hours</span>
+                    </div>
+            <!-- end cirlce -->
+            <div class="circle">
+            <b class="minutes">00</b>
+            <span>minutes</span>
+                    </div>
+            <!-- end cirlce -->
+            <div class="circle">
+            <b class="seconds">00</b>
+            <span>seconds</span>
+                    </div>
+            <!-- end cirlce -->
+
+
+
+
+
+
+
+    </div>
+
+
+
+            </div>
+          <!-- end inner --> 
+        </div>
+        <!-- end table --> 
+      </div>
+      <!-- end error-pages --> 
+    </section>
+    <!-- end slider -->
+    <footer>
+      <div class="container">
+        <div class="top-footer">
+          <div class="row">
+            <div class="col-md-4 col-sm-6">
+              <div class="box-content"> <i class="ion-android-microphone"></i>
+                <h5>CUSTOMER SUPPORT</h5>
+                <p>Monday-Friday : 08:00 - 18:00<br><br></p>
+              </div>
+              <!-- end box-content --> 
+            </div>
+            <!-- end col-4 -->
+            <div class="col-md-4 col-sm-6">
+              <div class="box-content"> <i class="ion-navigate"></i>
+                <h5>HEADQUERTOR</h5>
+                <p> Manassas, VA,<br> United States</p>
+              </div>
+              <!-- end box-content --> 
+            </div>
+            <!-- end col-4 -->
+            <div class="col-md-4 col-sm-12">
+              <div class="box-content"> <i class="ion-ios-telephone"></i>
+                <h5>QUICK CONTACT</h5>
+                <p>+571 288 3130 <br>
+                  <a href="#">roberto@lomar-gcg.com</a> </p>
+              </div>
+              <!-- end box-content --> 
+            </div>
+            <!-- end col-4 --> 
+          </div>
+          <!-- end row --> 
+        </div>
+        <!-- end top-footer -->
+        <div class="row">
+          <!--  
+          <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="about-text">
+              <h4 class="title">CONSTRUCTOR</h4>
+              <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a</p>
+            </div>
+          -->
+            <!-- end about-text --> 
+          </div>
+          <!-- end col-3 -->
+          <div class="col-md-3 col-sm-12 col-xs-12">
+            <h4 class="title">PHOTO GALLERY</h4>
+            <ul class="gallery-thumbs">
+              <li><a href="{{ asset('public/images/image1.png') }}" class="fancybox"><img src="{{ asset('public/images/image1.png') }}" alt="Image"></a></li>
+              <li><a href="{{ asset('public/images/image2.png') }}" class="fancybox"><img src="{{ asset('public/images/image2.png') }}" alt="Image"></a></li>
+              <li><a href="{{ asset('public/images/image5.png') }}" class="fancybox"><img src="{{ asset('public/images/image5.png') }}" alt="Image"></a></li>
+              <li><a href="{{ asset('public/images/image6.png') }}" class="fancybox"><img src="{{ asset('public/images/image6.png') }}" alt="Image"></a></li>
+              <li><a href="{{ asset('public/images/image5.png') }}" class="fancybox"><img src="{{ asset('public/images/image5.png') }}" alt="Image"></a></li>
+              <li><a href="{{ asset('public/images/image7.png') }}" class="fancybox"><img src="{{ asset('public/images/image7.png') }}" alt="Image"></a></li>
+              <li><a href="{{ asset('public/images/image8.png') }}" class="fancybox"><img src="{{ asset('public/images/image8.png') }}" alt="Image"></a></li>
+              <li><a href="{{ asset('public/images/image9.png') }}" class="fancybox"><img src="{{ asset('public/images/image9.png') }}" alt="Image"></a></li>
+            </ul>
+          </div>
+          <!-- end col-3 -->
+          <!--
+          <div class="col-md-6 col-sm-12 col-xs-12">
+            <h4 class="title">PROMO VIDEO</h4>
+            <div class="video">
+              <figure><img src="{{ asset('public/images/banner1.jpg') }}" alt="Image">
+                <div class="table">
+                  <div class="inner"> <i class="ion-play"></i>
+                    <h4><a href="http://www.youtube.com/embed/BpPR4Xww?autoplay=1" class="fancybox fancybox.iframe">WATCH VIDEO</a></h4>
+                  </div>
+                  <!-- end inner --> 
+                </div>
+                <!-- end table --> 
+              </figure>
+            </div>
+            <!-- end video --> 
+          </div>
+          <!-- end col-6 --> 
+        </div>
+        <!-- end row -->
+        <div class="sub-footer">
+          <div class="row">
+            <div class="col-xs-12"> <span class="copyright">Copyright © 2016 , LOMAR | General Contracting Group</span> <span class="creation">Created by vkings-go.com in El Salvador</span> </div>
+            <!-- end col-12 --> 
+          </div>
+          <!-- end row --> 
+        </div>
+        <!-- end sub-footer --> 
+      </div>
+      <!-- end container --> 
+    </footer>
+    <!-- end footer --> 
+
+    <!-- Modal -->
+    <div class="modal fade" id="register-box" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Register now </h4>
+          </div>
+          <!-- end modal-header -->
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label>Your e-mail</label>
+                <input type="text" placeholder="E-mail">
+              </div>
+              <!-- end form-group -->
+              <div class="form-group">
+                <label>Your password</label>
+                <input type="password" placeholder="Pasword">
+              </div>
+              <!-- end form-group -->
+              <div class="form-group">
+                <label>Your password - Again</label>
+                <input type="password" placeholder="Pasword">
+              </div>
+              <!-- end form-group -->
+              <div class="form-group">
+                <label>Your city</label>
+                <select>
+                  <option>Select yours</option>
+                </select>
+              </div>
+              <!-- end form-group -->
+              <div class="form-group">
+                <button type="submit">REGISTER</button>
+              </div>
+              <!-- end form-group -->
+            </form>
+          </div>
+          <!-- end modal-body --> 
+        </div>
+        <!-- end modal-content --> 
+      </div>
+      <!-- end modal-dialog --> 
+    </div>
+    <!-- end modal -->
+
+    <div class="modal fade" id="login-box" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Member Login</h4>
+          </div>
+          <!-- end modal-header -->
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label>Your e-mail</label>
+                <input type="text" placeholder="E-mail">
+              </div>
+              <!-- end form-group -->
+              <div class="form-group">
+                <label>Your password</label>
+                <input type="password" placeholder="Pasword">
+              </div>
+              <!-- end form-group -->
+              <div class="form-group"> <a href="#">I forget my password</a> </div>
+              <!-- end form-group -->
+              <div class="form-group">
+                <button type="submit">LOGIN</button>
+              </div>
+              <!-- end form-group -->
+            </form>
+          </div>
+          <!-- end modal-body --> 
+        </div>
+        <!-- end modal-content --> 
+      </div>
+      <!-- end modal-dialog --> 
+    </div>
+    <!-- end modal --> 
+
+    <a href="#0" class="cd-top"></a> 
+{% endblock %}
