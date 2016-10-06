@@ -14,4 +14,12 @@ class WebController extends Controller
     {
         return $this->render('LOMARWebBundle:Web:coming-soon.html.twig');
     }
+    
+    /**
+     * @Route("/home")
+     */
+    public function homeAction()
+    {
+        return $this->render('LOMARWebBundle:Web:index.html.twig');
+    }
 }

@@ -7,9 +7,9 @@
         
         <title>{% block title %}{% endblock %}</title>
         
-        <meta name="author" content="Themezinho">
-        <meta name="description" content="Constructor | HTML5 Template">
-        <meta name="keywords" content="html, template, carousel, theme, themezinho, construction, html5">
+        <meta name="author" content="www.vkings-go.com">
+        <meta name="description" content="LoMar General Contracting Group">
+        <meta name="keywords" content="construction, lomar, stone, stonework, outdoor, fireplace, exterior, sidewalk, pool, landscaping, services, firepits, grills, driveways, company, living, manassas, vkings-go.com">
         
         <!-- SOCIAL MEDIA META -->
         <meta property="og:description" content="Constructor | HTML5 Template">
@@ -37,7 +37,6 @@
         {% block stylesheets %}
         <!-- CSS FILES -->
         
-        
         <link href="{{ asset('public/css/main.css') }}" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -49,7 +48,7 @@
         {% endblock %}
         
     </head>
-    <body>
+    <body class="body-left">
         {% block body %}{% endblock %}
         
         {% block javascripts %}
@@ -60,15 +59,15 @@
                 $(window).load(function(){
                         $(".loading").addClass("fade-out");
                         $(".loading .table .inner").addClass("fade-out-inner");
-
                 });
         })(jQuery)
         </script> 
         <script src="{{ asset('public/js/bootstrap.min.js') }}"></script> 
-        <script src="{{ asset('public/js/bootstrap-slider.js') }}"></script> <script src=" {{ asset('js/jquery.stellar.js') }}"></script> 
+        <script src="{{ asset('public/js/bootstrap-slider.js') }}"></script> 
+        <script src="{{ asset('public/js/jquery.stellar.js') }}"></script> 
         <script src="{{ asset('public/js/jquery.fancybox.js?v=2.1.5') }}" type="text/javascript" ></script> 
         <script src="{{ asset('public/js/isotope.min.js') }}"></script> 
-        <script src="{{ asset('public/js/masonry.js"') }}"></script> 
+        <script src="{{ asset('public/js/masonry.js') }}"></script> 
         <script src="{{ asset('public/js/owl.carousel.js') }}"></script> 
         <script src="{{ asset('public/js/wow.js') }}"></script> 
         <script src="{{ asset('public/js/counter.js') }}"></script> 

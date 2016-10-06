@@ -45,12 +45,9 @@
           <div class="col-md-3 col-sm-12 col-xs-12">
             <h4 class="title">PHOTO GALLERY</h4>
             <ul class="gallery-thumbs">
-              <li><a href="{{ asset('public/images/image1.png') }}" class="fancybox"><img src="{{ asset('public/images/image1.png') }}" alt="Image"></a></li>
-              <li><a href="{{ asset('public/images/image2.png') }}" class="fancybox"><img src="{{ asset('public/images/image2.png') }}" alt="Image"></a></li>
-              <li><a href="{{ asset('public/images/image3.png') }}" class="fancybox"><img src="{{ asset('public/images/image3.png') }}" alt="Image"></a></li>
-              <li><a href="{{ asset('public/images/image4.png') }}" class="fancybox"><img src="{{ asset('public/images/image4.png') }}" alt="Image"></a></li>
-              <li><a href="{{ asset('public/images/image5.png') }}" class="fancybox"><img src="{{ asset('public/images/image5.png') }}" alt="Image"></a></li>
-              <li><a href="{{ asset('public/images/image6.png') }}" class="fancybox"><img src="{{ asset('public/images/image6.png') }}" alt="Image"></a></li>
+            {% block gallery %}
+                {{ include('gallery.html.twig')}}
+            {% endblock %}
             </ul>
           </div>
           <!-- end col-3 -->
@@ -75,7 +72,7 @@
         <!-- end row -->
         <div class="sub-footer">
           <div class="row">
-            <div class="col-xs-12"> <span class="copyright">Copyright © 2016 , LoMar | General Contracting Group</span> <span class="creation">Created by vkings-go.com in El Salvador</span> </div>
+            <div class="col-xs-12"> <span class="copyright">Copyright © 2016, LoMar | General Contracting Group</span> <span class="creation">Created by vkings-go.com in El Salvador</span> </div>
             <!-- end col-12 --> 
           </div>
           <!-- end row --> 

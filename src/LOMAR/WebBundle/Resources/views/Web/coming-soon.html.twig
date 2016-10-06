@@ -3,20 +3,16 @@
 {% block title %}LoMar | We'll be back soon{% endblock %}
 
 {% block body %}
-    <body class="body-left">
-    <div class="loading">
-      <div class="table">
-        <div class="inner"> <img src="{{ asset('public/images/_logo.png') }}" alt="" class="logo"> </div> 
-        <!-- end inner --> 
-      </div>
-      <!-- end table --> 
-    </div>
-    <!-- end loading -->
+    
+    {% block loading %}
+        {{ include('loading.html.twig')}}
+    {% endblock %} 
+
     <div class="transition-overlay"></div>
     <section class="slider">
       <div class="error-pages">
         <div class="table">
-          <div class="inner"> <a href="index.html"><img src="{{ asset('public/images/_logo.png') }}" alt="" class="site-logo"></a>
+          <div class="inner"> <a href="#"><img src="{{ asset('public/images/logo.png') }}" alt="LoMar | General Contracting Group" class="site-logo"></a>
             <h3 style="font-size:90px;">We'll be back soon</h3>
             <h6>We are coming wiht our new website</h6>
             <style>
@@ -27,30 +23,27 @@
             </style>
 
             <div id="countdown">
-            <div class="circle">
-            <b class="days">00</b>
-            <span>days</span>
+                <div class="circle">
+                <b class="days">00</b>
+                <span>days</span>
+                </div>
+                <!-- end circle -->
+                <div class="circle">
+                <b class="hours">00</b>
+                <span>hours</span>
+                        </div>
+                <!-- end cirlce -->
+                <div class="circle">
+                <b class="minutes">00</b>
+                <span>minutes</span>
+                        </div>
+                <!-- end cirlce -->
+                <div class="circle">
+                <b class="seconds">00</b>
+                <span>seconds</span>
+                        </div>
+                <!-- end cirlce -->
             </div>
-            <!-- end circle -->
-            <div class="circle">
-            <b class="hours">00</b>
-            <span>hours</span>
-                    </div>
-            <!-- end cirlce -->
-            <div class="circle">
-            <b class="minutes">00</b>
-            <span>minutes</span>
-                    </div>
-            <!-- end cirlce -->
-            <div class="circle">
-            <b class="seconds">00</b>
-            <span>seconds</span>
-                    </div>
-            <!-- end cirlce -->
-
-    </div>
-
-
 
             </div>
           <!-- end inner --> 
@@ -65,88 +58,8 @@
             {{ include('footer.html.twig')}}
     {% endblock %}        
     
-    <!-- Modal -->
-    <div class="modal fade" id="register-box" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Register now </h4>
-          </div>
-          <!-- end modal-header -->
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label>Your e-mail</label>
-                <input type="text" placeholder="E-mail">
-              </div>
-              <!-- end form-group -->
-              <div class="form-group">
-                <label>Your password</label>
-                <input type="password" placeholder="Pasword">
-              </div>
-              <!-- end form-group -->
-              <div class="form-group">
-                <label>Your password - Again</label>
-                <input type="password" placeholder="Pasword">
-              </div>
-              <!-- end form-group -->
-              <div class="form-group">
-                <label>Your city</label>
-                <select>
-                  <option>Select yours</option>
-                </select>
-              </div>
-              <!-- end form-group -->
-              <div class="form-group">
-                <button type="submit">REGISTER</button>
-              </div>
-              <!-- end form-group -->
-            </form>
-          </div>
-          <!-- end modal-body --> 
-        </div>
-        <!-- end modal-content --> 
-      </div>
-      <!-- end modal-dialog --> 
-    </div>
-    <!-- end modal -->
-
-    <div class="modal fade" id="login-box" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">Member Login</h4>
-          </div>
-          <!-- end modal-header -->
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label>Your e-mail</label>
-                <input type="text" placeholder="E-mail">
-              </div>
-              <!-- end form-group -->
-              <div class="form-group">
-                <label>Your password</label>
-                <input type="password" placeholder="Pasword">
-              </div>
-              <!-- end form-group -->
-              <div class="form-group"> <a href="#">I forget my password</a> </div>
-              <!-- end form-group -->
-              <div class="form-group">
-                <button type="submit">LOGIN</button>
-              </div>
-              <!-- end form-group -->
-            </form>
-          </div>
-          <!-- end modal-body --> 
-        </div>
-        <!-- end modal-content --> 
-      </div>
-      <!-- end modal-dialog --> 
-    </div>
-    <!-- end modal --> 
-
-    <a href="#0" class="cd-top"></a> 
+    {% block modal %}
+            {{ include('modal.html.twig')}}
+    {% endblock %}        
+    
 {% endblock %}
