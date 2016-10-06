@@ -12,6 +12,6 @@ class WebController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('LOMARWebBundle:Web:comming-soon.html.twig');
+        return $this->render('LOMARWebBundle:Web:coming-soon.html.twig');
     }
 }
