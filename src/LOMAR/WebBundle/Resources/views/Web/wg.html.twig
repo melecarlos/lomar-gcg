@@ -1,0 +1,74 @@
+{% extends "base.html.twig" %}
+
+{% block title %}LoMar | Home{% endblock %}
+
+{% block body %}
+
+{% block loading %}
+        {{ include('loading.html.twig')}}
+{% endblock %} 
+
+<div class="transition-overlay"></div>
+
+{% block header %}
+        {{ include('header.html.twig')}}
+{% endblock %}
+
+<section class="internal-header overlay-dark" data-stellar-background-ratio="0.5">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h2 class="title">RETAINING WALL & GARDENS</h2>
+        <ol class="breadcrumb">
+          <li><a href="/home">Home</a></li>
+          <li>Services</li>
+          <li class="active">Retaining Wall & Gardens</li>
+        </ol>
+      </div>
+      <!-- end col-12 --> 
+    </div>
+    <!-- end row --> 
+  </div>
+  <!-- end container --> 
+</section>
+<!-- end internal-header -->
+<section class="text-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+      	<figure><img src="{{ asset('public/images/service5.jpg') }}" alt="Image"></figure>
+        <p>If you are thinking of building a retaining wall, leave it to us. LoMar will design and install the retaining wall that you need to address the pending elevation changes and irregular on the ground. Our goal is to offer you a solution to stabilize the concentration of the soil behind the wall, even large amounts of land. To beautify the exterior of your home we also recommend a retaining wall in pool decks, wood fire and patios.</p>
+      </div>
+      <!-- end col-8 --> 
+      <div class="col-md-4">
+      	<aside class="content-side-menu">
+            <ul>
+                {% block service %}
+                    {{ include('service.html.twig')}}
+                {% endblock %} 
+            </ul>
+        </aside>
+      </div>
+      <!-- end col-4 -->
+    </div>
+    <!-- end row --> 
+  </div>
+  <!-- end container --> 
+</section>
+<!-- end text-content -->
+
+{% block newsletter %}
+        {{ include('newsletter.html.twig')}}
+{% endblock %} 
+
+{% block footer %}
+        {{ include('footer.html.twig')}}
+{% endblock %} 
+
+{% block modal %}
+        {{ include('modal.html.twig')}}
+{% endblock %}
+
+{% endblock %}
+
+

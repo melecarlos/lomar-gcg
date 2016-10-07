@@ -98,7 +98,7 @@
             <h5>MORE INFORMATION FILL UP TO FORM</h5>
             <h2>LET'S GET OFFER !</h2>
             <p></p>
-            <a href="get-quote.html">GET QUOTE <i class="ion-chevron-right"></i></a> </div>
+            <a href="/quote">GET QUOTE <i class="ion-chevron-right"></i></a> </div>
           <!-- end col-12 --> 
         </div>
         <!-- end row --> 
@@ -166,32 +166,9 @@
 </section>
 <!-- end about-us -->
 
-<section class="newsletter">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-sm-7 col-xs-12">
-        <div class="titles">
-          <h6>SIGN UP FOR OUR </h6>
-          <h2>NEWSLETTER</h2>
-        </div>
-        <!-- end title -->
-        <form>
-          <div class="form-group">
-            <input type="text" placeholder="Your e-mail">
-            <button type="submit">SUBSCRIBE</button>
-          </div>
-          <small>I promise, we won’t spam you!</small>
-        </form>
-      </div>
-      <!-- end col-8 -->
-      <div class="col-md-4 col-sm-5 hidden-xs"> <img src="{{ asset('public/images/newsletter-image.png') }}" alt="Image" class="image"> </div>
-      <!-- end col-4 --> 
-    </div>
-    <!-- end row --> 
-  </div>
-  <!-- end container --> 
-</section>
-<!-- end newsletter -->
+{% block newsletter %}
+        {{ include('newsletter.html.twig')}}
+{% endblock %} 
     
 {% block footer %}
         {{ include('footer.html.twig')}}
