@@ -1,0 +1,106 @@
+<header>
+  <!-- side-menu -->
+  <div class="side-box"> 
+  	<span class="close-sidebar"><i class="ion-close"></i></span>
+  	<div class="widget search">
+    	<h4>QUICK SEARCH</h4>
+        <form>
+        	<input type="text" placeholder="Search here">
+        	<button type="submit">GO</button>
+        </form>
+    </div>
+    <!-- end widget -->
+	<div class="widget text">
+    	<img src="{{ asset('public/images/logo.png') }}" style="height: 100px" alt="Image">
+        <p></p>
+    </div>
+    <!-- end text -->
+    <div class="widget gallery">
+    	<ul>
+        {% block gallery %}
+            {{ include('gallery.html.twig')}}
+        {% endblock %}
+        </ul>
+    </div>
+    <!-- end gallery -->
+    <!--
+    <div class="widget responsive">
+    	<img src="{{ asset('public/images/icon-responsive.png') }}" alt="Image">
+        <h5>RESPONSIVE DESIGN</h5>
+    </div>
+    -->
+   <!-- end responsive -->
+    <div class="widget social-media">
+         <ul>
+            <li><a href="https://goo.gl/J3xJqt"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="https://goo.gl/l1fSvq"><i class="ion-social-googleplus"></i></a></li>
+         </ul>
+    </div>
+   <!-- end social-media -->
+   <small>Copyright © 2016<br> LoMar | General Contracting Group</small>
+   </div>
+  <!-- end side-menu -->
+  
+  <div class="search-bar">
+    <form>
+      <input type="text" placeholder="Type your word" autofocus >
+      <button type="submit">SEARCH</button>
+    </form>
+    <span class="close-button"><i class="ion-close"></i></span> </div>
+  <!-- end search-bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 col-sm-3 hidden-xs">
+          <h5 class="hidden-sm">CUSTOMER SERVICE : <b>+571 288 3130 MANASSAS</b></h5>
+          <ul class="social-media">
+            <li><a href="https://goo.gl/J3xJqt"><i class="ion-social-facebook"></i></a></li>
+            <li><a href="https://goo.gl/l1fSvq"><i class="ion-social-googleplus"></i></a></li>
+          </ul>
+        </div>
+        <!-- end col-6 -->
+        <div class="col-md-3 col-sm-9 col-xs-12">
+          <ul class="shop-menu">
+            <li><a href="#" data-toggle="modal" data-target="#register-box">REGISTER</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#login-box">LOGIN</a></li>
+            <li><a href="#" class="search-btn">SEARCH</a></li>
+          </ul>
+        </div>
+        <!-- end col-6 --> 
+      </div>
+      <!-- end row --> 
+    </div>
+    <!-- end container --> 
+  </div>
+  <!-- end top-bar -->
+  <nav class="navbar navbar-default" role="navigation" id="nav">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle toggle-menu menu-left push-body" data-toggle="collapse" data-target="#mobile-menu"> <i class="ion-navicon"></i> </button>
+        <a class="navbar-brand" href="index.html"><img src="{{ asset('public/images/logonav.png') }}" alt="Image"></a> </div>
+      <div class="collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="mobile-menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html" class="transition">HOME</a></li>
+          <li class="dropdown"> <a href="#">SERVICES</a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#" class="transition">DRIVEWAYS & ENTRACES</a></li>
+              <li><a href="#" class="transition">OUTDOOR LIVING</a></li>
+              <li><a href="#" class="transition">RETAINING WALL & GARDENS</a></li>
+              <li><a href="#" class="transition">CUSTOM STONE VENEERS</a></li>
+              <li><a href="#" class="transition">FIREPLACES, FIREPITS & GRILLS</a></li>
+              <li><a href="#" class="transition">POOL DECKS & PATHWAYS</a></li>
+            </ul>
+          </li>
+          <li><a href="contact-us.html" class="transition">GALLERY</a></li>
+          <li><a href="contact-us.html" class="transition">ABOUT US</a></li>
+          <li><a href="contact-us.html" class="transition">CONTAT US</a></li>
+          <li class="side-menu">SIDE MENU<span></span><span class="spacing"></span><span></span></li>
+        </ul>
+        <!-- end navbar-nav --> 
+      </div>
+      <!-- end navbar-collapse --> 
+    </div>
+    <!-- end container--> 
+  </nav>
+  <!--- end nav --> 
+</header>
