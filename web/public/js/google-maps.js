@@ -1,8 +1,8 @@
 // Google maps pin tooltip	
 	var markers = [
     	{
-       		"lat": '-38.7447208',
-           "lng": '-77.5221134',
+       		"lat": '-22.9512072',
+           "lng": '-43.185657',
 		  
 			"description": 'Themezinho <br/><a href="http://www.themezinho.net" style="color:#ef3c3c; font-weight:800;">Get it now</a>'
         }
@@ -33,7 +33,7 @@
 			var marker = new google.maps.Marker({
            	position: myLatlng,
            	map: map,
-        	icon: 'images/map-pin.png',
+        	icon: 'public/images/map-pin.png',
            	title: data.title
            	});
 			(function (marker, data) {
