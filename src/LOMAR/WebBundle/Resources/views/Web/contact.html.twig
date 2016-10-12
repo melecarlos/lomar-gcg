@@ -1,6 +1,6 @@
 {% extends "base.html.twig" %}
 
-{% block title %}LoMar | Home{% endblock %}
+{% block title %}LoMar | Contact Us{% endblock %}
 
 {% block body %}
 
@@ -107,6 +107,11 @@
 
 {% block modal %}
         {{ include('modal.html.twig')}}
+{% endblock %}
+
+{% block javascripts %}
+        {{ parent() }}
+        <script src="{{ asset('http://maps.googleapis.com/maps/api/js?sensor=false') }}"></script>
 {% endblock %}
 
 {% endblock %}
