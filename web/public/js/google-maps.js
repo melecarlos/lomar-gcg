@@ -1,8 +1,8 @@
 // Google maps pin tooltip	
 	var markers = [
     	{
-       		"lat": '-22.9512072',
-           "lng": '-43.185657',
+       		"lat": '38.7543106',
+           "lng": '-77.4779336',
 		  
 			"description": 'Themezinho <br/><a href="http://www.themezinho.net" style="color:#ef3c3c; font-weight:800;">Get it now</a>'
         }

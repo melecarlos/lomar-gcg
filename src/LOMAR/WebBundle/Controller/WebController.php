@@ -8,7 +8,7 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 class WebController extends Controller
 {
     /**
-     * @Route("/")
+     * @Route("/coming-soon")
      */
     public function indexAction()
     {
@@ -16,7 +16,7 @@ class WebController extends Controller
     }
     
     /**
-     * @Route("/home")
+     * @Route("/")
      */
     public function homeAction()
     {
