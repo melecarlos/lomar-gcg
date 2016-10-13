@@ -18,25 +18,7 @@
         {{ include('slider.html.twig')}}
 {% endblock %}
 
-    <section class="catalogues">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-7 col-xs-12"></div>
-                <!-- end col-6 -->
-                    <div class="col-md-6 col-sm-5 col-xs-12">
-                        <div class="boxes"> <img src="{{ asset('public/images/icon5.png') }}" alt="Image">
-                          <h5>SERVICES</h5>
-                        </div>
-                        <!-- end boxes --> 
-                    </div>
-                <!-- end col-6 --> 
-            </div>
-            <!-- end row --> 
-        </div>
-        <!-- end container --> 
-    </section>
-    <!-- end catalogues -->
-    
+    <!-- home-services -->
     <section class="home-services">
       <div class="container">
         <div class="row">
@@ -90,81 +72,6 @@
       <!-- end container --> 
     </section>
     <!-- end home-services -->
-    
-    <section class="quote background1 overlay-yellow" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h5>MORE INFORMATION FILL UP TO FORM</h5>
-            <h2>LET'S GET OFFER !</h2>
-            <p></p>
-            <a href="/quote">GET QUOTE <i class="ion-chevron-right"></i></a> </div>
-          <!-- end col-12 --> 
-        </div>
-        <!-- end row --> 
-      </div>
-      <!-- end container --> 
-    </section>
-<!-- end quote -->
-<section class="about-us">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="titles">
-          <h6>WE LIKE TO INTRODUCE</h6>
-          <h2>CONTRACTOR</h2>
-        </div>
-        <!-- end title --> 
-      </div>
-      <!-- end col-12 -->
-      <div class="col-md-4 col-sm-12">
-        <div class="left-image">
-          <figure><img src="{{ asset('public/images/image2.jpg') }}" class="img-thumbnail" alt="Image"> <span>ABOUT</span> </figure>
-        </div>
-        <!-- end left-image --> 
-      </div>
-      <!-- end col-4 -->
-      <div class="col-md-8 col-sm-12">
-        <div class="row">
-          <div class="col-md- col-sm-6">
-            <div class="services-box">
-              <figure><img src="{{ asset('public/images/image3.jpg') }}" alt="Image"></figure>
-              <h4>ABOUT DIGGER</h4>
-              <p>When I came in he cleared the books and papers from the table, and with him I went into plans and</p>
-              <ul>
-                <li>Feedback as to how to get this approved</li>
-                <li>While I’d be able to provide. </li>
-                <li>I can only do after it has crossed</li>
-                <li>certain threshold, quality wise</li>
-              </ul>
-            </div>
-            <!-- end services-box --> 
-          </div>
-          <!-- end col-6 -->
-          <div class="col-md-6 col-sm-6">
-            <div class="services-box">
-              <figure><img src="{{ asset('public/images/image4.jpg') }}" alt="Image"></figure>
-              <h4>ABOUT WORKERS</h4>
-              <p>When I came in he cleared the books and papers from the table, and with him I went into plans and</p>
-              <ul>
-                <li>Feedback as to how to get this approved</li>
-                <li>While I’d be able to provide. </li>
-                <li>I can only do after it has crossed</li>
-                <li>certain threshold, quality wise</li>
-              </ul>
-            </div>
-            <!-- end services-box --> 
-          </div>
-          <!-- end col-6 --> 
-        </div>
-      </div>
-      <!-- end col-8 --> 
-    </div>
-    <!-- end row --> 
-  </div>
-  <!-- end container --> 
-</section>
-<!-- end about-us -->
 
 {% block newsletter %}
         {{ include('newsletter.html.twig')}}

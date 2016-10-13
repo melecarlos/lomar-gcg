@@ -63,7 +63,7 @@
           </div>
           <!-- end form-group -->
           <div class="form-group">
-            <label>About what ?</label>
+            <label>About what?</label>
             <input type="text" name="subject" id="subject" required>
           </div>
           <!-- end form-group -->
@@ -109,11 +109,4 @@
         {{ include('modal.html.twig')}}
 {% endblock %}
 
-{% block javascripts %}
-        {{ parent() }}
-        <script src="{{ asset('http://maps.googleapis.com/maps/api/js?sensor=false') }}"></script>
 {% endblock %}
-
-{% endblock %}
-
-
