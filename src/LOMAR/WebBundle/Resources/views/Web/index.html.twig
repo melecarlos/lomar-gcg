@@ -3,86 +3,513 @@
 {% block title %}LoMar | Home{% endblock %}
 
 {% block body %}
+<!-- Page preloader -->
+		<div id="loading">
+			<div id="preloader">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+                
+		<!-- Overlay -->
+		<div class="global-overlay">
+			<div class="overlay">
 
-{% block loading %}
-        {{ include('loading.html.twig')}}
-{% endblock %} 
+				<!-- Lines Overlay -->
+				<div class="overlay-dash"></div>
 
-<div class="transition-overlay"></div>
+			</div>
+		</div>
 
-{% block header %}
-        {{ include('header_trans.html.twig')}}
-{% endblock %}
+		<!-- START - Home Part -->
+		<section id="home-wrap">
 
-{% block slider %}
-        {{ include('slider.html.twig')}}
-{% endblock %}
+			<!-- Stars Overlay - Uncomment the next 3 lines to activate the effect-->
+			<!-- <div id='stars'></div>
+			<div id='stars2'></div>
+			<div id='stars3'></div> -->
 
-    <!-- home-services -->
-    <section class="home-services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="titles">
-              <h6>THINGS HAVE OUR AMAZING</h6>
-              <h2>SERVICES</h2>
-            </div>
-            <!-- end title --> 
-          </div>
-          <!-- end col-12 -->
-          <div class="col-md-4 col-sm-6">
-            <figure><img src="{{ asset('public/images/service3.jpg') }}" class="img-responsive" style="width: 100%" alt="Image"></figure>
-            <h4>DRIVEWAYS & ENTRACES</h4>
-            <p>We offer our experience and knowledge in the construction of paved roads. We will create for you attractive and exclusive designs to acclimate your space. LoMar promises durability and easy maintenance, as our paved walkways are able to support much more weight than conventional concrete driveways, because it will never be broken, thanks to its flex format that allows to support more weight and pressure.</p>
-          </div>
-          <!-- end col-3 -->
-          <div class="col-md-4 col-sm-6">
-            <figure><img src="{{ asset('public/images/service1.jpg') }}" class="img-responsive" style="width: 100%" alt="Image"></figure>
-            <h4>OUTDOOR LIVING</h4>
-            <p>LoMar has specialized in providing solutions according to the needs and demands of each of our customers/clients. Our main goal is to create a space of comfort, unique and personalized. We are dedicated to conducting stonework and paving jobs, using most avant garde materials and techniques. We work for you in different outdoor areas, including: patios, barbecues, woodburning fireplaces, campfires, living areas and more.</p>
-          </div>
-          <!-- end col-3 -->
-          <div class="col-md-4 col-sm-6">
-            <figure><img src="{{ asset('public/images/service5.jpg') }}" class="img-responsive" style="width: 100%" alt="Image"></figure>
-            <h4>RETAINING WALL & GARDENS</h4>
-            <p>If you are thinking of building a retaining wall, leave it to us. LoMar will design and install the retaining wall that you need to address the pending elevation changes and irregular on the ground. Our goal is to offer you a solution to stabilize the concentration of the soil behind the wall, even large amounts of land. To beautify the exterior of your home we also recommend a retaining wall in pool decks, wood fire and patios</p>
-          </div>
-          <!-- end col-3 -->
-          <div class="col-md-4 col-sm-6">
-            <figure><img src="{{ asset('public/images/service4.jpg') }}" class="img-responsive" style="width: 100%" alt="Image"></figure>
-            <h4>CUSTOM STONE VENEERS</h4>
-            <p>Our stone veneer is the best alternative to improve the exterior of your home. LoMar is responsible for building modern designs and current styles for you to own an attractive sidewalk. We have specialized in stone jobs, hardscaping and wood veneer. We have plenty of natural stones for decorative or protective finishes. With our veneer you can get a new look and own a place full of warmth. </p>
-          </div>
-          <!-- end col-3 -->
-          <div class="col-md-4 col-sm-6">
-            <figure><img src="{{ asset('public/images/service2.jpg') }}" class="img-responsive" style="width: 100%" alt="Image"></figure>
-            <h4>FIREPLACES, FIREPITS & GRILLS</h4>
-            <p>Add an outdoor fireplace. LoMar will create a place for you to enjoy outside activities, either in hot or cold weather by adding a family reunion point for cooking and have fun. We turn your yard into a place where all family members will wish to meet to chat and want to enjoy the most of their free time.</p>
-          </div>
-          <!-- end col-3 -->
-          <div class="col-md-4 col-sm-6">
-            <figure><img src="{{ asset('public/images/service6.jpg') }}" class="img-responsive" style="width: 100%" alt="Image"></figure>
-            <h4>POOL DECKS & PATHWAYS</h4>
-            <p>LoMar is the right one to fulfill/accomplish your dream of paving the yard of your home just the way you want. You will have the best group of specialists in construction of patios, pools and walkways of Washington DC, Northern Virginia and surrounding areas, who will turn your vision into reality. We will create for you a functional, pleasant and comfortable space to relax, entertain or perform multiple outdoor activities. The use of excellent materials and greater commitment to each of our creations guarantees our customers enjoy high quality standards in creating a personalized, durable and low maintenance yard.</p>
-          </div>
-          <!-- end col-3 -->
-        </div>
-        <!-- end row --> 
-      </div>
-      <!-- end container --> 
-    </section>
-    <!-- end home-services -->
-    
-{% block newsletter %}
-    {{ include('newsletter.html.twig')}}
-{% endblock %} 
-    
-{% block footer %}
-        {{ include('footer.html.twig')}}
-{% endblock %} 
+			<div class="content">
 
-{% block modal %}
-        {{ include('modal.html.twig')}}
-{% endblock %}
+				<!-- Your logo -->
+				<img src="{{ asset('public/img/logo.png') }}" alt="" class="img-responsive center-block text-intro opacity-0" /><br>
+                                
 
+				<h1 class="text-intro opacity-0"><span class="polyfy-title">Welcome!</span></h1>
+
+				<p class="text-intro opacity-0">
+                                Lomar Scapes Solutions, a fully operational general contracting company specializing in outdoor construction such as Paver patios, firepits & wood burning fireplaces, flagstone patios, walkways, driveways, pool decking renovation, stone and brick works, columns, retaining walls, outdoor lighting, porch & stoop renovation and new construction, concrete and much more.
+                                </p><br>
+
+				<a href="#" id="go-contact" data-target="contact-anchor" class="light-btn text-intro opacity-0">Have a question?</a>
+
+				<a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">Notify Me!</a>
+						
+			</div> <!-- /. content -->
+
+			<!-- Social icons -->
+			<div class="social-icons text-intro opacity-0">
+
+				<a href="#"><i class="fa fa-facebook"></i></a>
+				<a href="#"><i class="fa fa-google-plus"></i></a>
+
+			</div> <!-- /. social-icons -->
+
+		</section>
+		<!-- END - Home Part -->
+
+		<!-- START - More Informations Part -->
+		<section id="info-wrap" class="show-info">
+
+			<div class="hero">
+					
+				<div class="center-text">
+
+                                        <div class="col-md-6 text-right">
+                                            <h5 class="darky">OUR MISSION</h5>
+                                            <p>To help you in the proccess of enhancing your dream. We are comited to provide each of our clients with the best and most exclusive design and worksmanship to assure full satisfaction each step of the way during and after a project.</p>
+                                            <br>
+                                        </div>
+                                        
+                                        <div class="col-md-6 text-right">
+                                            <h5 class="darky">OUR GOAL</h5>
+                                            <p>With a combined 20 years of experience covering the metropolitan area and its surroundings such as Fairfax, Ashburn, Leesburg, Gainesville, Vienna, Mclean, Arlington. We are anxious to take on new projects in other cities to continue to grow and continue help others create that especial outdoor living space to comfortably accommodate great gatherings among friends and family. Bringing people closer!</p>
+                                        </div>
+				</div> <!-- /. center-text -->
+
+			</div> <!-- /. hero -->
+
+			<div class="content">
+					
+				<div class="photo-line">
+						
+					<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+
+						<!-- Item -->
+						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6 clear-second">
+							
+							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+							<a class="box-picture" href="{{ asset('public/img/services/gallery-1.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+								
+								<!-- Your picture -->
+								<img src="{{ asset('public/img/services/gallery-1.jpg') }}" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+								<div class="text-center">
+									<h4>DRIVEWAYS & ENTRACES</h4>
+								</div>
+								
+							</a>
+								
+							<!-- Picture's description for the gallery -->
+							<figcaption itemprop="caption description">
+
+								<div class="photo-details">
+								
+									<h4>Driverways & Entraces</h4>
+
+									<span class="border"></span>
+
+									<p>We offer our experience and knowledge in the construction of paved roads. We will create for you attractive and exclusive designs to acclimate your space. LoMar promises durability and easy maintenance, as our paved walkways are able to support much more weight than conventional concrete driveways, because it will never be broken, thanks to its flex format that allows to support more weight and pressure.</p>
+
+								</div>
+
+							</figcaption>
+
+						</figure>
+
+						<!-- Item -->
+						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
+							
+							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+							<a class="box-picture" href="{{ asset('public/img/services/gallery-2.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+								
+								<!-- Your picture -->
+								<img src="{{ asset('public/img/services/gallery-2.jpg') }}" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+								
+                                                                <div class="text-center">
+									<h4>OUTDOOR LIVING</h4>
+								</div>
+								
+							</a>
+								
+							<!-- Picture's description for the gallery -->
+							<figcaption itemprop="caption description">
+
+								<div class="photo-details">
+								
+									<h4>Outdoor Living</h4>
+
+									<span class="border"></span>
+
+									<p>LoMar has specialized in providing solutions according to the needs and demands of each of our customers/clients. Our main goal is to create a space of comfort, unique and personalized. We are dedicated to conducting stonework and paving jobs, using most avant garde materials and techniques. We work for you in different outdoor areas, including: patios, barbecues, woodburning fireplaces, campfires, living areas and more.</p>
+
+								</div>
+
+							</figcaption>
+
+						</figure>
+
+						<!-- Item -->
+						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6 clear-second">
+							
+							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+							<a class="box-picture" href="{{ asset('public/img/services/gallery-3.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+								
+								<!-- Your picture -->
+								<img src="{{ asset('public/img/services/gallery-3.jpg') }}" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+								
+								<div class="text-center">
+									<h4>RETAINING WALL & GARDENS</h4>
+								</div>
+								
+							</a>
+								
+							<!-- Picture's description for the gallery -->
+							<figcaption itemprop="caption description">
+
+								<div class="photo-details">
+								
+									<h4>Retaining Wall & Gardens</h4>
+
+									<span class="border"></span>
+
+									<p>If you are thinking of building a retaining wall, leave it to us. LoMar will design and install the retaining wall that you need to address the pending elevation changes and irregular on the ground. Our goal is to offer you a solution to stabilize the concentration of the soil behind the wall, even large amounts of land. To beautify the exterior of your home we also recommend a retaining wall in pool decks, wood fire and patios.</p>
+
+								</div>
+
+							</figcaption>
+
+						</figure>
+
+						<!-- Item -->
+						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
+							
+							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+							<a class="box-picture" href="{{ asset('public/img/services/gallery-4.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+								
+								<!-- Your picture -->
+								<img src="{{ asset('public/img/services/gallery-4.jpg') }}" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+								
+								<div class="text-center">
+									<h4>CUSTOM STONE VENEERS</h4>
+								</div>
+								
+							</a>
+								
+							<!-- Picture's description for the gallery -->
+							<figcaption itemprop="caption description">
+
+								<div class="photo-details">
+								
+									<h4>Custom Stone Venners</h4>
+
+									<span class="border"></span>
+
+									<p>Our stone veneer is the best alternative to improve the exterior of your home. LoMar is responsible for building modern designs and current styles for you to own an attractive sidewalk. We have specialized in stone jobs, hardscaping and wood veneer. We have plenty of natural stones for decorative or protective finishes. With our veneer you can get a new look and own a place full of warmth. </p>
+
+								</div>
+
+							</figcaption>
+
+						</figure>
+                                                
+                                                <!-- Item -->
+						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
+							
+							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+							<a class="box-picture" href="{{ asset('public/img/services/gallery-4.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+								
+								<!-- Your picture -->
+								<img src="{{ asset('public/img/services/gallery-4.jpg') }}" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+								
+								<div class="text-center">
+									<h4>FIREPLACES, FIREPITS & GRILLS</h4>
+								</div>
+								
+							</a>
+								
+							<!-- Picture's description for the gallery -->
+							<figcaption itemprop="caption description">
+
+								<div class="photo-details">
+								
+									<h4>Fireplaces, Firepits & Grills</h4>
+
+									<span class="border"></span>
+
+									<p>Add an outdoor fireplace. LoMar will create a place for you to enjoy outside activities, either in hot or cold weather by adding a family reunion point for cooking and have fun. We turn your yard into a place where all family members will wish to meet to chat and want to enjoy the most of their free time.</p>
+
+								</div>
+
+							</figcaption>
+
+						</figure>
+                                                               
+                                            <!-- Item -->
+						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
+							
+							<!-- Link to the picture and to open the gallery / Fill up well the data-size property -->
+							<a class="box-picture" href="{{ asset('public/img/services/gallery-4.jpg') }}" itemprop="contentUrl" data-size="1920x1280">
+								
+								<!-- Your picture -->
+								<img src="{{ asset('public/img/services/gallery-4.jpg') }}" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
+								
+								<div class="text-center">
+									<h4>POOL DECKS & PATHWAYS</h4>
+								</div>
+								
+							</a>
+								
+							<!-- Picture's description for the gallery -->
+							<figcaption itemprop="caption description">
+
+								<div class="photo-details">
+								
+									<h4>Pool Decks & Pathways</h4>
+
+									<span class="border"></span>
+
+									<p>LoMar is the right one to fulfill/accomplish your dream of paving the yard of your home just the way you want. You will have the best group of specialists in construction of patios, pools and walkways of Washington DC, Northern Virginia and surrounding areas, who will turn your vision into reality. We will create for you a functional, pleasant and comfortable space to relax, entertain or perform multiple outdoor activities. The use of excellent materials and greater commitment to each of our creations guarantees our customers enjoy high quality standards in creating a personalized, durable and low maintenance yard.</p>
+
+								</div>
+
+							</figcaption>
+
+						</figure> 
+                                                               
+					</div> <!-- /# my-gallery -->
+
+				</div> <!-- /. photo-line -->
+
+			</div> <!-- /. content -->
+
+			<div id="contact-anchor" class="dark-hero">
+
+				<div class="center-text">
+
+					<h3 class="lighty">Get in touch!</h3>
+
+					<div class="info-contact row">
+
+		                <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+		                    <div class="contact-item"><i class="icon ion-ios-mic"></i>
+		                        <p>Customer Support
+	                            	<br>Monday - Friday: 08:00 - 18:00</p>
+		                    </div>
+		                </div>
+
+		                <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+		                    <div class="contact-item"><i class="icon ion-ios-location"></i>
+		                        <p>Manassas, VA
+		                            <br>United States</p>
+		                    </div>
+		                </div>
+
+		                <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
+		                    <div class="contact-item"><i class="icon ion-ios-email"></i>
+		                        <p>Phone: (+571) 288 3130
+		                        	<br><a href="mailto:roberto@lomar-gcg.com">roberto@lomar-gcg.com</a>
+		                        </p>
+		                    </div>
+		                </div>
+
+            		</div> <!-- /. info-contact -->
+
+				</div> <!-- /. center-text -->
+
+			</div> <!-- /. dark-hero -->
+
+			<div class="content-form no-padding-bottom">
+
+		        <!-- START - Contact Form -->
+		    	<form id="contact-form" name="contact-form" method="POST" data-name="Contact Form">
+
+		    		<div class="row">
+
+		                <!-- Full name -->
+		                <div class="col-xs-12 col-sm-6 col-lg-6">
+		                    <div class="form-group">
+		                        <input type="text" id="name" class="form form-control" placeholder="Your Name*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name*'" name="name" data-name="Name" required>
+		                    </div>
+		                </div>
+
+		                <!-- E-mail -->
+		                <div class="col-xs-12 col-sm-6 col-lg-6">
+		                    <div class="form-group">
+		                        <input type="email" id="email" class="form form-control" placeholder="Your Email*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email*'" name="email-address" data-name="Email Address" required>
+		                    </div>
+		                </div>
+
+		                <!-- Subject -->
+		                <div class="col-xs-12 col-sm-12 col-lg-12">
+		                    <div class="form-group">
+		                        <input type="text" id="subject" class="form form-control" placeholder="Write the subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write the subject'" name="subject" data-name="Subject">
+		                    </div>
+		                </div>
+
+		                <!-- Message -->
+		                <div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
+		                    <div class="form-group">
+		                        <textarea id="text-area" class="form textarea form-control" placeholder="Your message here*... 20 characters Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message here*... 20 characters Min.'" name="message" data-name="Text Area" required></textarea>
+		                    </div>
+		                </div>
+
+		            </div>
+
+		        	<!-- Button submit -->
+		        	<button type="submit" id="valid-form" class="btn btn-color">Send my Message</button>
+
+		        </form>
+		        <!-- END - Contact Form -->
+		        
+		        <!-- !!! Answer for the contact form is displayed in the next div, do not remove it. -->       
+		        <div id="block-answer">
+
+					<div id="answer"></div>
+
+				</div>
+			
+			</div> <!-- /. content-form -->
+
+			<footer>
+
+				<p>© LEGEND - Made for legendary people</p>
+
+			</footer>
+
+		</section>
+		<!-- END - More Informations Part -->
+
+		<!-- START - Newsletter Popup -->
+		<div id="somedialog" class="dialog">
+
+			<div class="dialog__overlay"></div>
+					
+			<div class="dialog__content">
+						
+				<div class="dialog-inner">
+							
+					<h4>Join the Legend right now!</h4>
+							
+					<p>Being the first to know always feels great... Signing up to our newsletter gives you <strong>exclusive access to our Grand Opening!</strong></p>
+
+					<!-- Newsletter Form -->
+					<div id="subscribe">
+
+		                <form action="php/notify-me.php" id="notifyMe" method="POST">
+
+		                    <div class="form-group">
+
+		                        <div class="controls">
+		                            
+		                        	<!-- Field  -->
+		                        	<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" />
+
+		                        	<!-- Spinner top left during the submission -->
+		                        	<i class="fa fa-spinner opacity-0"></i>
+
+		                            <!-- Button -->
+		                            <button class="btn btn-lg submit">Get notified</button>
+
+		                            <div class="clear"></div>
+
+		                        </div>
+
+		                    </div>
+
+		                </form>
+
+						<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
+						<div class="block-message">
+
+							<div class="message">
+
+								<p class="notify-valid"></p>
+
+							</div>
+
+						</div>
+
+        			</div>
+        			<!-- /. Newsletter Form -->
+
+				</div>
+				<!-- /. dialog-inner -->
+
+				<!-- Button Cross to close the Newsletter Popup -->
+				<button class="close-newsletter" data-dialog-close><i class="icon ion-close-round"></i></button>
+
+			</div>
+			<!-- /. dialog__content -->
+						
+		</div>
+		<!-- END - Newsletter Popup -->
+
+		<!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+		    <!-- Background of PhotoSwipe. 
+	        	It's a separate element as animating opacity is faster than rgba(). -->
+		    <div class="pswp__bg"></div>
+
+		    <!-- Slides wrapper with overflow:hidden. -->
+		    <div class="pswp__scroll-wrap">
+
+		        <!-- Container that holds slides. 
+		            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+		            Don't modify these 3 pswp__item elements, data is added later on. -->
+		        <div class="pswp__container">
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		            <div class="pswp__item"></div>
+		        </div>
+
+		        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+		        <div class="pswp__ui pswp__ui--hidden">
+
+		            <div class="pswp__top-bar">
+
+		                <!--  Controls are self-explanatory. Order can be changed. -->
+
+		                <div class="pswp__counter"></div>
+
+		                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+		                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+		                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+		                <!-- element will get class pswp__preloader--active when preloader is running -->
+		                <div class="pswp__preloader">
+		                    <div class="pswp__preloader__icn">
+		                      <div class="pswp__preloader__cut">
+		                        <div class="pswp__preloader__donut"></div>
+		                      </div>
+		                    </div>
+		                </div>
+
+		            </div>
+
+		            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+		                <div class="pswp__share-tooltip"></div> 
+		            </div>
+
+		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+		            </button>
+
+		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+		            </button>
+
+		            <div class="pswp__caption">
+		                <div class="pswp__caption__center"></div>
+		            </div>
+
+		        </div>
+
+		    </div>
+
+		</div>
+		<!-- /. Root element of PhotoSwipe. Must have class pswp. -->
 {% endblock %}

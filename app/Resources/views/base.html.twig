@@ -1,79 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+<html lang="en-us" class="no-js">
+
+	<head>
+	<meta charset="utf-8">
         <title>{% block title %}{% endblock %}</title>
-        
-        <meta name="author" content="http://vkings.net">
-        <meta name="description" content="LoMar General Contracting Group">
-        <meta name="keywords" content="construction, lomar, stone, stonework, outdoor, fireplace, exterior, sidewalk, pool, landscaping, services, firepits, grills, driveways, company, living, manassas, vkings-go.com">
-        
-        <!-- SOCIAL MEDIA META -->
-        <meta property="og:description" content="LoMar General Contracting Group">
-        <meta property="og:image" content="http://lomar-gcg.com/public/images/logo_cube.png">
-        <meta property="og:site_name" content="LoMar GCG">
-        <meta property="og:title" content="LoMar General Contracting Group">
-        <meta property="og:type" content="LoMar GCG">
-        <meta property="og:url" content="http://lomar-gcg.com">
+        <meta name="description" content="The description should optimally be between 150-160 characters.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="vkings.net">
 
-        <!-- FAVICON FILES -->
-        <link href="{{ asset('public/ico/apple-touch-icon-144-precomposed.png') }}" rel="apple-touch-icon-precomposed" sizes="144x144">
-        <link href="{{ asset('public/ico/apple-touch-icon-114-precomposed.png') }}" rel="apple-touch-icon-precomposed" sizes="114x114">
-        <link href="{{ asset('public/ico/apple-touch-icon-72-precomposed.png') }}" rel="apple-touch-icon-precomposed" sizes="72x72">
-        <link href="{{ asset('public/ico/apple-touch-icon-57-precomposed.png') }}" rel="apple-touch-icon-precomposed">
-        <link href="{{ asset('public/ico/favicon.png') }}" rel="shortcut icon">
-        
         {% block stylesheets %}
-        <!-- CSS FILES -->
-        
-        <link href="{{ asset('public/css/main.css') }}" rel="stylesheet">
+            
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="{{ ('public/img/favicon.png') }}">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('public/img/favicon-retina-ipad.png') }}">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('public/img/favicon-retina-iphone.png') }}">
+        <!-- Standard iPad Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('public/img/favicon-standard-ipad.png') }}">
+        <!-- Standard iPhone Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('public/img/favicon-standard-iphone.png') }}">
 
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-              <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-              <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-            <![endif]-->
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="{{ asset('public/css/style-info.css') }}" />
+
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="{{ asset('public/js/modernizr.custom.js') }}"></script>
+        
         {% endblock %}
         
-    </head>
-    <body class="body-left">
-        {% block body %}{% endblock %}
-        
+	</head>
+	
+	<body>
+                {% block body %}{% endblock %}
+		
+
         {% block javascripts %}
-        <!-- JS FILES --> 
-        <script src="{{ asset('public/js/jquery.min.js') }}"></script> 
-        <script type="text/javascript">
-        (function($) {
-                $(window).load(function(){
-                        $(".loading").addClass("fade-out");
-                        $(".loading .table .inner").addClass("fade-out-inner");
-                });
-        })(jQuery)
-        </script> 
-        <script src="{{ asset('public/js/bootstrap.min.js') }}"></script> 
-        <script src="{{ asset('public/js/bootstrap-slider.js') }}"></script> 
-        <script src="{{ asset('public/js/jquery.stellar.js') }}"></script> 
-        <script src="{{ asset('public/js/jquery.fancybox.js?v=2.1.5') }}" type="text/javascript" ></script> 
-        <script src="{{ asset('public/js/isotope.min.js') }}"></script> 
-        <script src="{{ asset('public/js/masonry.js') }}"></script> 
-        <script src="{{ asset('public/js/owl.carousel.js') }}"></script> 
-        <script src="{{ asset('public/js/wow.js') }}"></script> 
-        <script src="{{ asset('public/js/counter.js') }}"></script> 
-        <script src='{{ asset('public/js/jquery.themepunch.tools.min.js') }}' type='text/javascript' ></script> 
-        <script src='{{ asset('public/js/jquery.themepunch.revolution.min.js') }}' type='text/javascript' ></script> 
-        <script src='{{ asset('public/js/jquery.validate.min.js') }}' type='text/javascript' ></script> 
-        <script src='{{ asset('public/js/jquery.form.js') }}' type='text/javascript' ></script> 
-        <script src='{{ asset('public/js/contact-form.js') }}' type='text/javascript' ></script> 
-        <script src='{{ asset('public/js/settings.js') }}' type='text/javascript' ></script> 
-        <script src="{{ asset('public/js/waypoints.min.js') }}"></script> 
-        <script src="{{ asset('public/js/jquery.counterup.min.js') }}"></script> 
-        <script src="{{ asset('public/js/scripts.js') }}"></script>
-        <script src="{{ asset('http://maps.googleapis.com/maps/api/js?sensor=false') }}"></script>
-        <script src="{{ asset('public/js/google-maps.js') }}" type="text/javascript"></script>
+            
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+        <!-- ********** Resources jQuery ********** -->
+        <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+	
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="{{ asset('public/js/jquery.min.js') }}"></script>
+	<script src="{{ asset('public/js/jquery.easings.min.js') }}"></script>
+	<script src="{{ asset('public/js/bootstrap.min.js') }}"></script>
+
+	<!-- Accelerated JavaScript animation JS file -->
+	<script src="{{ asset('public/js/velocity.min.js') }}"></script> 
+
+	<!-- Accelerated JavaScript animation UI JS file -->
+	<script src="{{ asset('public/js/velocity.ui.min.js') }}"></script> 
+
+	<!-- Newsletter plugin -->
+	<script src="{{ asset('public/js/notifyMe.js') }}"></script>
+
+	<!-- Contact form plugin -->
+	<script src="{{ asset('public/js/contact-me.js') }}"></script>
+
+	<!-- Slideshow/Image plugin -->
+	<script src="{{ asset('public/js/vegas.js') }}"></script>
+
+	<!-- Scroll plugin -->
+	<script src="{{ asset('public/js/jquery.mousewheel.js') }}"></script>
+
+	<!-- Custom Scrollbar plugin -->
+	<script src="{{ asset('public/js/jquery.mCustomScrollbar.js') }}"></script>
+
+	<!-- Popup Newsletter Form -->
+	<script src="{{ asset('public/js/classie.js') }}"></script>
+	<script src="{{ asset('public/js/dialogFx.js') }}"></script>
+
+	<!-- PhotoSwipe Core JS file -->
+	<script src="{{ asset('public/js/photoswipe.js') }}"></script> 
+
+	<!-- PhotoSwipe UI JS file -->
+	<script src="{{ asset('public/js/photoswipe-ui-default.js') }}"></script>
+
+	<!-- Main JS File -->
+	<script src="{{ asset('public/js/main-info.js') }}"></script>
+	
+	<!--[if lt IE 10]><script type="text/javascript" src="{{ asset('public/js/placeholder.js') }}"></script><![endif]-->
+
         {% endblock %}
-    </body>
+            
+	</body>
+
 </html>
