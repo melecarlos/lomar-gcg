@@ -2,11 +2,20 @@
 <html lang="en-us" class="no-js">
 
 	<head>
-	<meta charset="utf-8">
-        <title>{% block title %}{% endblock %}</title>
-        <meta name="description" content="The description should optimally be between 150-160 characters.">
+	
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="vkings.net">
+        
+        <title>{% block title %}{% endblock %}</title>
+
+        <meta name="description" content="Lomar Scapes Solutions, a fully operational general contracting company specializing in outdoor construction such as Paver patios, firepits & wood burning fireplaces, flagstone patios, walkways, driveways, pool decking renovation, stone and brick works, columns, retaining walls, outdoor lighting, porch & stoop renovation and new construction, concrete and much more.">
+        <meta name="image" content="http://www.lomar-gcg.com/public/img/logo-lomar-gcg.png">
+        <meta name="site_name" content="LoMar | General Contracting Group">
+        <meta name="title" content="LoMar GCG - Space Solutions">
+        <meta name="keywords" content="lomar, virginia, va, stone, driveways, entraces, outdoor, outdoor living, retainning wall, gardens, stone venners, fireplaces, firepits, grills, pool, pool desks">
+        <meta name="type" content="Contracting company specializing in outdoor construction.">
+        <meta name="url" content="http://www.lomar-gcg.com">
+        <meta name="author" content="www.vkings.net">
 
         {% block stylesheets %}
             
@@ -25,8 +34,8 @@
         <!-- ============== Resources style ============== -->
         <link rel="stylesheet" href="{{ asset('public/css/style-info.css') }}" />
 
-		<!-- Modernizr runs quickly on page load to detect features -->
-		<script src="{{ asset('public/js/modernizr.custom.js') }}"></script>
+        <!-- Modernizr runs quickly on page load to detect features -->
+        <script src="{{ asset('public/js/modernizr.custom.js') }}"></script>
         
         {% endblock %}
         
@@ -80,7 +89,7 @@
 
 	<!-- Main JS File -->
 	<script src="{{ asset('public/js/main-info.js') }}"></script>
-	
+        
 	<!--[if lt IE 10]><script type="text/javascript" src="{{ asset('public/js/placeholder.js') }}"></script><![endif]-->
 
         {% endblock %}
