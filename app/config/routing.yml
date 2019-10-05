@@ -1,4 +1,0 @@
-lomar:
-    resource: "@LOMARWebBundle/Controller/"
-    type:     annotation
-    prefix:   /
