@@ -24,7 +24,7 @@ const Promise = require('promise');
 -----------------------------------------------*/
 //const CSS = './css';
 const JS = './js';
-const lib = './lib';
+const lib = './dist/assets/lib';
 const Paths = {
     HERE: './',
     PAGES: {
