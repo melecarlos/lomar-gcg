@@ -11,7 +11,14 @@
   "license": "SEE LICENSE IN LICENSE.md",
   "homepage": "http://prium.github.io/Boots4/",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "bootstrap": "^4.1.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-mysql-session": "^2.1.0",
+    "express-session": "^1.17.0",
+    "express-validator": "^6.2.0",
     "gulp-html-minifier": "^0.1.8",
     "imagesloaded": "^4.1.4",
     "isotope-layout": "^3.0.6",
@@ -21,7 +28,11 @@
     "jquery.mb.ytplayer": "^3.2.2",
     "lightbox2": "^2.10.0",
     "loaders.css": "^0.1.2",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1",
     "owl.carousel": "^2.3.4",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "popper.js": "^1.14.3",
     "prismjs": "^1.14.0",
     "rellax": "^1.7.1",
@@ -29,7 +40,8 @@
     "semantic-ui-accordion": "^2.3.1",
     "semantic-ui-transition": "^2.3.1",
     "sticky-kit": "^1.1.3",
-    "stickyfilljs": "^2.0.3"
+    "stickyfilljs": "^2.0.3",
+    "timeago.js": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.54",
@@ -58,6 +70,7 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^5.0.0",
+    "nodemon": "^1.19.4",
     "promise": "^8.0.1"
   }
 }

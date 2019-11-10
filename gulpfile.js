@@ -23,8 +23,8 @@ const Promise = require('promise');
 |   Paths
 -----------------------------------------------*/
 //const CSS = './css';
-const JS = './js';
-const lib = './dist/assets/lib';
+const JS = './dist/js';
+const lib = './dist/lib';
 const Paths = {
     HERE: './',
     PAGES: {
@@ -35,17 +35,17 @@ const Paths = {
     JS: {
         ALL: 'src/js/**/*.js',
         BOOTSTRAP: [
-            './js/bootstrap/util.js',
-            './js/bootstrap/alert.js',
-            './js/bootstrap/button.js',
-            './js/bootstrap/carousel.js',
-            './js/bootstrap/collapse.js',
-            './js/bootstrap/dropdown.js',
-            './js/bootstrap/modal.js',
-            './js/bootstrap/tooltip.js',
-            './js/bootstrap/popover.js',
-            './js/bootstrap/scrollspy.js',
-            './js/bootstrap/tab.js',
+            './src/js/bootstrap/util.js',
+            './src/js/bootstrap/alert.js',
+            './src/js/bootstrap/button.js',
+            './src/js/bootstrap/carousel.js',
+            './src/js/bootstrap/collapse.js',
+            './src/js/bootstrap/dropdown.js',
+            './src/js/bootstrap/modal.js',
+            './src/js/bootstrap/tooltip.js',
+            './src/js/bootstrap/popover.js',
+            './src/js/bootstrap/scrollspy.js',
+            './src/js/bootstrap/tab.js',
         ],
         BOOTS4: [
             'src/js/boots4/Util.js',
@@ -62,7 +62,7 @@ const Paths = {
         FONTS: './fonts/**/*.*',
         VIDEO: './video/**/*.*',
         IMG: './img/**/*.*',
-        JS: './js',
+        JS: './dist/js',
     },
     CSS: './dist/css',
     DEPENDENCIES: {
@@ -140,14 +140,14 @@ const Paths = {
         },
         'bootstrap-scss': {
             FROM: 'node_modules/bootstrap/scss/**/*.scss',
-            TO: 'scss/bootstrap',
+            TO: 'src/scss/bootstrap',
         },
     },
     GENERATED: [
         'src/js/bootstrap',
-        'scss/bootstrap',
+        'src/scss/bootstrap',
         './css',
-        './js',
+        './dist/js',
     ],
 };
 
@@ -188,41 +188,6 @@ gulp.task('scss:min', () => gulp.src(Paths.SCSS.THEME)
     }))
     .pipe(cleanCSS({ compatibility: 'ie9' }))
     .pipe(rename({ suffix: '.min' }))
-    .pipe(sourcemaps.write('.'))
-    .pipe(plumber.stop())
-    .pipe(gulp.dest(Paths.CSS))
-    .pipe(browserSync.stream()));
-
-gulp.task('scss:rtl', () => gulp.src(Paths.SCSS.THEME)
-    .pipe(plumber())
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-        outputStyle: 'expanded',
-    }).on('error', sass.logError))
-    .pipe(autoprefixer({
-        browsers: ['last 5 versions'],
-        cascade: false,
-    }))
-    .pipe(rtlcss()) // Convert to RTL.
-    .pipe(rename({ suffix: '-rtl' })) // Append "-rtl" to the filename.
-    .pipe(sourcemaps.write('.'))
-    .pipe(plumber.stop())
-    .pipe(gulp.dest(Paths.CSS))
-    .pipe(browserSync.stream()));
-
-gulp.task('scss:rtl:min', () => gulp.src(Paths.SCSS.THEME)
-    .pipe(plumber())
-    .pipe(sourcemaps.init())
-    .pipe(sass({
-        outputStyle: 'expanded',
-    }).on('error', sass.logError))
-    .pipe(autoprefixer({
-        browsers: ['last 5 versions'],
-        cascade: false,
-    }))
-    .pipe(rtlcss()) // Convert to RTL.
-    .pipe(cleanCSS({ compatibility: 'ie9' }))
-    .pipe(rename({ suffix: '-rtl.min' }))
     .pipe(sourcemaps.write('.'))
     .pipe(plumber.stop())
     .pipe(gulp.dest(Paths.CSS))

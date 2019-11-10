@@ -176,7 +176,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 
 (function (global, factory) {
-  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.Alert = factory(global.jQuery, global.Util));
+  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.Alert = factory(global.jQuery, global.Util));
 })(this, function ($, Util) {
   'use strict';
 
@@ -558,7 +558,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 
 (function (global, factory) {
-  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.Carousel = factory(global.jQuery, global.Util));
+  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.Carousel = factory(global.jQuery, global.Util));
 })(this, function ($, Util) {
   'use strict';
 
@@ -1224,7 +1224,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 
 (function (global, factory) {
-  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.Collapse = factory(global.jQuery, global.Util));
+  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.Collapse = factory(global.jQuery, global.Util));
 })(this, function ($, Util) {
   'use strict';
 
@@ -1650,7 +1650,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 
 (function (global, factory) {
-  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('popper.js'), require('./util.js.js')) : typeof define === 'function' && define.amd ? define(['jquery', 'popper.js', './util.js'], factory) : (global = global || self, global.Dropdown = factory(global.jQuery, global.Popper, global.Util));
+  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('popper.js'), require('./util.js')) : typeof define === 'function' && define.amd ? define(['jquery', 'popper.js', './util.js'], factory) : (global = global || self, global.Dropdown = factory(global.jQuery, global.Popper, global.Util));
 })(this, function ($, Popper, Util) {
   'use strict';
 
@@ -2243,7 +2243,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 
 (function (global, factory) {
-  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.Modal = factory(global.jQuery, global.Util));
+  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.Modal = factory(global.jQuery, global.Util));
 })(this, function ($, Util) {
   'use strict';
 
@@ -2891,7 +2891,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 
 (function (global, factory) {
-  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('popper.js'), require('./util.js.js')) : typeof define === 'function' && define.amd ? define(['jquery', 'popper.js', './util.js'], factory) : (global = global || self, global.Tooltip = factory(global.jQuery, global.Popper, global.Util));
+  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('popper.js'), require('./util.js')) : typeof define === 'function' && define.amd ? define(['jquery', 'popper.js', './util.js'], factory) : (global = global || self, global.Tooltip = factory(global.jQuery, global.Popper, global.Util));
 })(this, function ($, Popper, Util) {
   'use strict';
 
@@ -3797,7 +3797,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 
 (function (global, factory) {
-  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./tooltip.js.js')) : typeof define === 'function' && define.amd ? define(['jquery', './tooltip.js'], factory) : (global = global || self, global.Popover = factory(global.jQuery, global.Tooltip));
+  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./tooltip.js')) : typeof define === 'function' && define.amd ? define(['jquery', './tooltip.js'], factory) : (global = global || self, global.Popover = factory(global.jQuery, global.Tooltip));
 })(this, function ($, Tooltip) {
   'use strict';
 
@@ -4056,7 +4056,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 
 (function (global, factory) {
-  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.ScrollSpy = factory(global.jQuery, global.Util));
+  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.ScrollSpy = factory(global.jQuery, global.Util));
 })(this, function ($, Util) {
   'use strict';
 
@@ -4429,7 +4429,7 @@ function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterat
 
 
 (function (global, factory) {
-  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.Tab = factory(global.jQuery, global.Util));
+  (typeof exports === "undefined" ? "undefined" : _typeof(exports)) === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('jquery'), require('./util.js')) : typeof define === 'function' && define.amd ? define(['jquery', './util.js'], factory) : (global = global || self, global.Tab = factory(global.jQuery, global.Util));
 })(this, function ($, Util) {
   'use strict';
 
