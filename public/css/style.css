@@ -1522,7 +1522,7 @@ label.custom-checkbox .checkmark:after {
 }
 /*banner-style-2*/
 .banner-style-2{
-    background-image: url(https://via.placeholder.com/1920x800);
+    background-image: url('../images/sample.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
