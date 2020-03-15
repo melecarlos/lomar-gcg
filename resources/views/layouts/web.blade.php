@@ -29,9 +29,12 @@
     <script src="{{ asset('js/app.js') }}" defer></script>
     <link href="{{ asset('css/web.css') }}" rel="stylesheet">
 </head>
-<body>
+<body class="loader">
+    <div class="preloader">
+        <img src="{{ asset('images/tree.svg') }}" alt="preloader">
+    </div>
     <div id="app">
-        @include('layouts.web.sidebar')
+        @include('layouts.web.navbar')
         @yield('content')
         {{-- <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">

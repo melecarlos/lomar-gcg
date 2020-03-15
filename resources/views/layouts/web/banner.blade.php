@@ -16,66 +16,42 @@
                 <div class="col-xl-4 offset-xl-2 col-lg-5 offset-lg-1 col-md-12">
                     <div class="banner-form">
                         <form>
-                            <h5 class="text-theme">Find Your Dream Home</h5>
+                            <h5 class="text-theme">Your Dream House</h5>
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="search" name="#" class="form-control form-control-custom" placeholder="Enter Property, Location, Landmark ...">
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-4 col-sm-6">
-                                    <div class="form-group">
                                         <select class="form-control form-control-custom custom-select">
-                                            <option>Garden Status</option>
-                                            <option>Any</option>
-                                            <option>For Rent</option>
-                                            <option>For Sale</option>
+                                            <option>City</option>
+                                            <option>Manassas</option>
+                                            <option>Sterling</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-lg-12 col-md-4 col-sm-6">
                                     <div class="form-group">
                                         <select class="form-control form-control-custom custom-select">
-                                            <option>Any Type</option>
-                                            <option>Garden</option>
-                                            <option>Urban</option>
-                                            <option>Maintainance</option>
-                                            <option>Events</option>
+                                            <option>Service</option>
+                                            <option>Custom Stone Venners</option>
+                                            <option>Driveways & Entraces</option>
+                                            <option>Fireplaces Firepits & Grills</option>
+                                            <option>Outdoor Living</option>
+                                            <option>Pool & Pool Decks</option>
+                                            <option>Retaining Wall & Gardens</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-4 col-sm-6">
+                                <div class="col-md-12">
                                     <div class="form-group">
-                                        <select class="form-control form-control-custom custom-select">
-                                            <option>Bed</option>
-                                            <option>4</option>
-                                            <option>3</option>
-                                            <option>2</option>
-                                        </select>
+                                        <input type="email" name="#" class="form-control form-control-custom" placeholder="Enter your email">
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-4 col-sm-6">
+                                <div class="col-md-12">
                                     <div class="form-group">
-                                        <select class="form-control form-control-custom custom-select">
-                                            <option>Bath</option>
-                                            <option>4</option>
-                                            <option>3</option>
-                                            <option>2</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12 col-md-8 col-sm-12">
-                                    <div class="form-group">
-                                        <div class="range-slider">
-                                            <label for="amount" class="fs-16 fw-600 text-theme">Price:</label>
-                                            <input type="text" id="amount" readonly>
-                                            <input type="text" id="amount1" readonly>
-                                        </div>
-                                        <div id="slider-range"></div>
+                                        <input type="phone" name="#" class="form-control form-control-custom" placeholder="Enter your number phone">
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button type="submit" class="btn-first btn-submit full-width btn-height">Search Property</button>
+                                    <button type="submit" class="btn-first btn-submit full-width btn-height">Request a quote</button>
                                 </div>
                             </div>
                         </form>
