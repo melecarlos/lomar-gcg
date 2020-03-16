@@ -64,21 +64,11 @@
                                     <li class="menu-item menu-item-has-children">
                                         <a href="#" class="text-theme fs-14">Services</a>
                                         <ul class="custom sub-menu">
-                                            <li class="menu-item">
-                                                <a href="#" class="text-theme">Custom Stone Venners</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="#" class="text-theme">Driveways & Entraces</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="shop-right.html" class="text-theme">Outdoor Living</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="shop-full-width.html" class="text-theme">Pool & Pool Decks</a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="shop-detail.html" class="text-theme">Retaining Wall & Gardens</a>
-                                            </li>
+                                            @foreach ($services as $service)
+                                                <li class="menu-item">
+                                                    <a href="#" class="text-theme">{{ $service->name}}</a>
+                                                </li>
+                                            @endforeach
                                         </ul>
                                     </li>
                                 </ul>

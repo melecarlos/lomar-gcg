@@ -15,5 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'WebController@index')->name('web');
 Route::get('/home', 'HomeController@index')->name('home');
-
 Auth::routes(['register' => false]);

@@ -12,8 +12,9 @@ class WebController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return view('web');
+        $services = Service::all();
+        return view('web', ['services' => $services]);
     }
 }
