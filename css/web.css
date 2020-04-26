@@ -1,0 +1,22 @@
+.menu-style .header .right-side .cta-btn .cta-text:before {
+  border-top: none !important;
+  border-bottom: 82px solid transparent;
+}
+
+.banner-style-2:before {
+  background: linear-gradient(to right, #2d2d2d 10%, rgba(45, 45, 45, 0.95) 20%, rgba(45, 45, 45, 0.1) 80%, rgba(45, 45, 45, 0) 100%);
+}
+
+.banner-text h1,
+.banner-text p {
+  color: #fff;
+}
+
+.banner-text p {
+  font-weight: 200;
+}
+
+.banner-style-2 {
+  min-height: 600px;
+}
+

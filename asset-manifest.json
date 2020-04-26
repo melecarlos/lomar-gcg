@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/lomar-gcg/static/css/main.d1b05096.chunk.css",
+    "main.js": "/lomar-gcg/static/js/main.abdca15f.chunk.js",
+    "main.js.map": "/lomar-gcg/static/js/main.abdca15f.chunk.js.map",
+    "runtime-main.js": "/lomar-gcg/static/js/runtime-main.b5f9e240.js",
+    "runtime-main.js.map": "/lomar-gcg/static/js/runtime-main.b5f9e240.js.map",
+    "static/js/2.f1020b2d.chunk.js": "/lomar-gcg/static/js/2.f1020b2d.chunk.js",
+    "static/js/2.f1020b2d.chunk.js.map": "/lomar-gcg/static/js/2.f1020b2d.chunk.js.map",
+    "index.html": "/lomar-gcg/index.html",
+    "precache-manifest.9b8ac4c5ffe5bfe511acce3cd904b5ce.js": "/lomar-gcg/precache-manifest.9b8ac4c5ffe5bfe511acce3cd904b5ce.js",
+    "service-worker.js": "/lomar-gcg/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/lomar-gcg/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.f1020b2d.chunk.js.LICENSE.txt": "/lomar-gcg/static/js/2.f1020b2d.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/lomar-gcg/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5f9e240.js",
+    "static/js/2.f1020b2d.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.abdca15f.chunk.js"
+  ]
+}
